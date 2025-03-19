@@ -92,6 +92,8 @@ public class VillageTradeEnchantedBookInfo {
 
                 if (cost <= one_third + minCost) {
                     cast_color = ChatFormatting.GREEN;
+                } else if (cost <= minCost)
+                    cast_color = ChatFormatting.BLUE;
                 } else if (cost <= one_third * 2 + minCost) {
                     cast_color = ChatFormatting.WHITE;
                 } else {
